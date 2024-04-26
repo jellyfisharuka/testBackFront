@@ -194,6 +194,28 @@ a { transition: all 0.3s ease; }
 }
 
 .tm-footer-link:hover { color: #c5ced8; }
+.tm-red {
+  color: red;
+}
+.slider {
+  margin: 4em;
+  overflow: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 1rem;
+}
+
+.slider .slide { 
+  flex: 0 0 auto; 
+  width: 100%; 
+  scroll-snap-align: start; 
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (max-width: 550px) {
   .tm-special-item {
